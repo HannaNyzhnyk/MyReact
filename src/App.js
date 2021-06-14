@@ -1,13 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import NewTable from "./components/NewTable";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <NewTable />
+
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+
+          Hello!
+          <br />
+          Edit <code>src/App.js</code> and save to reload..
         </p>
         <a
           className="App-link"
