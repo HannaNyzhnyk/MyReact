@@ -1,0 +1,23 @@
+.basket-box {
+  background: rgb(184, 184, 245);
+  position: fixed;
+  left: 20px;
+  z-index: 9999;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.basket-box table td{
+    text-align: left;
+    padding:5px 10px;
+}
+
+.basketTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    margin: 5px;
+}
