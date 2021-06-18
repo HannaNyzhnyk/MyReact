@@ -25,6 +25,18 @@ export const getGoods = () => {
                     BasePrise: 5.25,
                     CategoryName: "Болти з шестигранною головкою",
                     SmallFotoFileName: "DIN934_white_zinc.png"
+                },
+                {
+                    id: 4337,
+                    Article: "5M6L0MLY000090AD00",
+                    Name: "DIN6921 Болт М20х90 10.9 з фланц Delta",
+                    GPropValues: [
+                        {TypeID: 102, Name: "Стандарт (група)", Values: "DIN 934"},
+                        {TypeID: 103, Name: "Матеріал", Values: "сталь"}
+                    ],
+                    BasePrise: 5.25,
+                    CategoryName: "Болти з шестигранною головкою",
+                    SmallFotoFileName: "DIN6921_delta.png"
                 }
             ])
         }, 1000);
