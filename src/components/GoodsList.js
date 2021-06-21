@@ -28,7 +28,7 @@ function GoodsList() {
     return <div className={'mt-4'}>
         {basket.length ? <Basket basket={basket} RemoveFromBasket={RemoveFromBasket}/> : ''}
         
-        <Container>
+        <Container fluid={true}>
             <Row>
                 {goods.map(item => <GoodsItem key={item.id} item={item} basket={basket} addToBasket={addToBasket} RemoveFromBasket={RemoveFromBasket}/>)}
             </Row>

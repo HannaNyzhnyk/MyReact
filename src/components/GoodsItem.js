@@ -1,9 +1,11 @@
 import { Card, Col, Table, Button} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { faShoppingCart, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 function GoodsItem({item, addToBasket, RemoveFromBasket, basket}) {
-    return <Col md={4} className={'mb-4'}>
+    return <Col md={3} className={'mb-4'}>
         <Card>
              <div style={{width:'100%', height:'150px', position:"relative"}}><Card.Img variant="top" src={`https://metalvis.ua/ProdImg/${item.SmallFotoFileName}`} style={{ position:"absolute", maxWidth:'90%', maxHeight:'90%', objectFit:"contain", top:"50%", left:"50%",transform:"translate(-50%,-50%)"}} />
             </div>
@@ -24,10 +26,12 @@ function GoodsItem({item, addToBasket, RemoveFromBasket, basket}) {
                     {basket.filter(el => el.id === item.id).length ?
                     <Button variant="warning"
                             onClick={() => RemoveFromBasket(item.id)}>
+                        <FontAwesomeIcon className={"mr-2 red"} icon={faTrashAlt} />
                         Видалити</Button> :
 
                     <Button variant="success"
                             onClick={() => addToBasket(item.id)}>
+                        <FontAwesomeIcon className={"mr-2"} icon={faShoppingCart} />
                         Купити</Button>}
                     </div>
             </Card.Body>
