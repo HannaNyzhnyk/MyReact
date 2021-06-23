@@ -2,11 +2,12 @@
     color:red;
 }
 .basket-box {
-  background: rgb(184, 184, 245);
+  background: #003366;
   position: fixed;
   left: 20px;
   z-index: 9999;
   color: #fff;
+  max-width: 600px;
   padding: 10px;
   text-align: center;
 }

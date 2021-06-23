@@ -24,7 +24,7 @@ function GoodsItem({item, addToBasket, RemoveFromBasket, basket}) {
                     </Table>
                     <div className="text-center">
                     {basket.filter(el => el.id === item.id).length ?
-                    <Button variant="warning"
+                    <Button variant="outline-warning"
                             onClick={() => RemoveFromBasket(item.id)}>
                         <FontAwesomeIcon className={"mr-2 red"} icon={faTrashAlt} />
                         Видалити</Button> :
